@@ -3,10 +3,11 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import Buefy from "buefy";
-import "buefy/dist/buefy.css";
+import vueHeadful from "vue-headful";
 
 Vue.use(Buefy);
 Vue.config.productionTip = false;
+Vue.component("vue-headful", vueHeadful);
 
 new Vue({
   router,
