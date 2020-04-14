@@ -1,3 +1,5 @@
 module.exports = {
-  'publicPath': '/calma-webapp/'
-};
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/calma-webapp/'
+    : '/'
+}
