@@ -4,10 +4,10 @@
       <div class="container">
 	<div class="columns">
 	  <div class="column is-one-fourth">
-	    <h1 class="title">Calma</h1>
+	    <h1 class="title">{{ $t("footer_calma") }}</h1>
 	  </div>
 	  <div class="column">
-	    <h1 class="title">Realização</h1>
+	    <h1 class="title">{{ $t("footer_realizacao") }}</h1>
 	    <div class="columns">
 	      <!-- Start column -->
 	      <div class="column">
@@ -48,8 +48,8 @@
 	</div>
       </div>
      <div class="container">
-       <p>Calma. 2020. Alguns direitos reservados. </p>
-       <p>Este projeto é colaborativo, de código aberto. O código-fonte está disponível no <a href="https://github.com/henriquepgomide/calma-webapp">Github</a>.</p>
+       <p>{{ $t("footer_description") }}.</p>
+       <p>{{ $t("footer_project_github") }}<a href="https://github.com/henriquepgomide/calma-webapp">Github</a>.</p>
      </div> 
     </footer> 
   </div>

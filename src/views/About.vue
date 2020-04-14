@@ -1,14 +1,13 @@
 <template>
   <div class="about">
     <vue-headful
-      title="Calma | Conheça a equipe e o projeto"
-      description="Conheça a equipe de especialistas e voluntários que mantém este projeto"
+      :title="$t('team_page_title_seo')"
+      :description="$t('team_page_description_seo')"
     />
-
       <section class="section">
 	<div class="container">
-	  <h1 class="title">Equipe</h1>
-	  <p class="is-size-5">Conheça a equipe de supervisores e voluntários do projeto.</p>
+	  <h1 class="title">{{ $t("team_page_header") }}</h1>
+	  <p class="is-size-5">{{ $t("team_page_description") }}</p>
 	</div>
       </section>
         <section class="section">
