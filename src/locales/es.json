@@ -1,4 +1,25 @@
 {
-  "hello": "こんにちは、世界"
+  "main_title_seo": "Calma - Disminuya su ansiedad durante COVID-19",
+  "main_description_seo": "Converse y aligere su ansiedad en estos tiempos de COVID-19,  con un voluntario entrenado",
+  "main_title": "Calma para este momento",
+  "main_subtitle": "Hable y alíviese en este momento de COVID-19",
+  "main_button_text": "Hable con un voluntario",
+  "main_col1_header": "Voluntarios de excelencia",
+  "main_col1_text": "Converse con estudiantes de doctorado, maestría y de carreras de grado, de las mejores instituciones académicas de Brasil y Argentina.",
+  "main_col_text_h": "Conozca nuestro equipo",
+  "main_col2_header": "Supervisores de Excelencia",
+  "main_col2_text": "Equipo de supervisores que poseen experiencia en diversas áreas relacionadas a la Salud Mental y Física.",
+  "main_col3_header": "Soporte Gratuito y de Calidad",
+  "main_col3_text": "En difícil situación del COVID-19, nos juntamos para ayudarte",
+  "navbar_principal": "Principal",
+  "navbar_equipe": "Equipo",
+  "navbar_conversar": "Conversar",
+  "footer_calma": "Calma",
+  "footer_realizacao": "Realización",
+  "footer_description": "Calma. 2020. Todos los derechos reservados",
+  "footer_project_github": "Este proyecto es colaborativo, con un código abierto. El código fuente esta disponible en",
+  "team_page_title_seo": "Calma / Conoce al equipo y al proyecto",
+  "team_page_description_seo": "Conoce al equipo de especialistas y voluntarios que forman parte de este proyecto",
+  "team_page_header": "Equipe",
+  "team_page_description": "Conoce al equipo de supervisores y voluntarios del proyecto"
 }
-
