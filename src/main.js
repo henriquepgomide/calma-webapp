@@ -7,7 +7,10 @@ import vueHeadful from "vue-headful";
 import VueI18n from "vue-i18n";
 import i18n from "./i18n";
 
-Vue.use(Buefy);
+Vue.use(Buefy, {
+  defaultIconPack: "fas",
+});
+
 Vue.use(VueI18n);
 Vue.config.productionTip = false;
 Vue.component("vue-headful", vueHeadful);

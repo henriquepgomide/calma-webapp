@@ -12,11 +12,67 @@
       </section>
         <section class="section">
       <div class="container">
-	{{services[1]}}
-	<h1>Hello Component</h1>
 	<b-table 
 	   :data="services"
-	   :columns="columns">
+	   ref="table"
+	   detailed
+	   :opened-detailed="defaultOpenedDetails"
+	   :detail-key="name"
+	   :show-detail-icon="showDetailIcon"
+	   :hasMobileCards="true"
+	   >
+
+	  <template slot-scope="props">
+	    <b-table-column field="name" label="Nome do Serviço" width="300" searchable>
+		{{ props.row.name }}
+	    </b-table-column>
+
+	    <b-table-column field="covid_related" label="COVID-19">
+	      {{ props.row.covid_related }}
+	    </b-table-column>
+
+	    <b-table-column field="service_remote" label="Remoto">
+	      {{ props.row.service_remote }}
+	    </b-table-column>
+
+	    <b-table-column field="service_type" label="Tipo de serviço">
+	      {{ props.row.service_typ }}
+	    </b-table-column>
+
+	    <b-table-column field="service_language" label="Idioma">
+	      {{ props.row.service_language }}
+	    </b-table-column>
+
+
+
+	  </template>
+	  <template slot="detail" slot-scope="props">
+	    <article class="media">
+	      <div class="media-content">
+		<div class="content">
+		  <p>
+		  <strong>{{ props.row.name }}</strong>
+		  <br>
+		  <strong>Descrição: </strong>{{ props.row.service_description }}
+		  <br>
+		  <strong>Observações: </strong>{{ props.row.observations}}
+		  <br>
+		  <strong>Link: </strong> <a :href="props.row.service_url">Clique aqui</a>
+		  <br>
+		  <strong>Telefone: </strong> {{ props.row.telephone }}
+		  <br>
+		  <strong>E-mail: </strong> {{ props.row.email }}
+		  <br>
+
+		  </p>
+		</div>
+	      </div>
+	    </article>
+	  </template>
+
+
+
+
 	</b-table>
       </div>
     </section>
@@ -29,27 +85,9 @@ export default {
   data() {
     return {
       services,
-      columns: [
-	{
-	  field: "name",
-	  label: "Serviço"
-	},
-	{
-	  field: "covid_related",
-	  label: "Específico COVID-19"
-	},
-	{
-	  field: "has_urgency",
-	  label: "Atende urgência?"
-	},
-	{
-	  field: "service_url",
-	  label: "Link"
-	},
-
-
-      ]
+      showDetailIcon: true,
+      defaultOpenedDetails: [1]
     }
-  }
+  },
 }
 </script>
