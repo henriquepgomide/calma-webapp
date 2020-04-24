@@ -15,6 +15,7 @@
   "navbar_equipe": "Equipe",
   "navbar_onde_buscar_ajuda": "Onde Buscar Ajuda",
   "navbar_conversar": "Conversar",
+  "navbar_libraries": "Materiais para leitura",
   "footer_calma": "Calma",
   "footer_realizacao": "Realização",
   "footer_description": "Calma. 2020. Alguns direitos reservados.",
@@ -26,5 +27,9 @@
   "services_page_title_seo": "Onde busco ajuda",
   "services_page_description_seo": "Use nossa lista para buscar ajuda em serviços de referência de saúde e segurança social",
   "services_page_header": "Onde busco ajuda?",
-  "services_page_description": "Use nossa lista para buscar ajuda em serviços de referência de saúde e segurança social."
+  "services_page_description": "Use nossa lista para buscar ajuda em serviços de referência de saúde e segurança social.",
+  "libraries_page_title_seo": "Material de referência",
+  "libraries_page_description_seo": "Conheça o material que fundamenta nosso atendimento e saiba mais sobre saúde física, mental e sua relação com COVID-19",
+  "libraries_page_header": "Material de referência",
+  "libraries_page_description": "Conheça o material que fundamenta nosso atendimento e saiba mais sobre saúde física, mental e sua relação com COVID-19"
 }

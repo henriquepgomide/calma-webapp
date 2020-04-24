@@ -19,8 +19,11 @@
 	    <b-navbar-item tag="router-link" :to="{ path: '/services' }">
 	      {{ $t("navbar_onde_buscar_ajuda") }}
 	    </b-navbar-item>
-
+	    <b-navbar-item tag="router-link" :to="{ path: '/libraries' }">
+	      {{ $t("navbar_libraries") }}
+	    </b-navbar-item>
 	</template>
+
         <template slot="end">
 	  <b-navbar-dropdown label="Idioma">
 	    <b-navbar-item @click="changeLocale('es')">
