@@ -7,6 +7,7 @@ import vueHeadful from "vue-headful";
 import VueI18n from "vue-i18n";
 import i18n from "./i18n";
 
+
 Vue.use(Buefy, {
   defaultIconPack: "fas",
 });

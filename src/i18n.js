@@ -1,5 +1,6 @@
 import Vue from "vue"
 import VueI18n from "vue-i18n"
+import getBrowserLocale from "@/util/get-browser-locale";
 
 Vue.use(VueI18n)
 
@@ -16,8 +17,17 @@ function loadLocaleMessages () {
   return messages;
 }
 
+function getStartingLocale() {
+  const browserLocale = getBrowserLocale({ countryCodeOnly: true })
+  if (browserLocale === 'es' || browserLocale === 'pt') {
+    return(browserLocale)
+  } else {
+    return process.env.VUE_APP_I18N_LOCALE || "pt"
+  }
+}
+
 export default new VueI18n({
-  locale: "pt",
+  locale: getStartingLocale(),
   fallbackLocale: "pt",
   messages: loadLocaleMessages()
 })
