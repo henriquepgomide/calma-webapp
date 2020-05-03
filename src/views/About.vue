@@ -4,25 +4,25 @@
       :title="$t('team_page_title_seo')"
       :description="$t('team_page_description_seo')"
     />
-      <section class="section">
-	<div class="container">
-	  <h1 class="title">{{ $t("team_page_header") }}</h1>
-	  <p class="is-size-5">{{ $t("team_page_description") }}</p>
-	</div>
-      </section>
-        <section class="section">
+    <section class="section">
       <div class="container">
-	<div v-for="people in team" :key="people.name">
-	  <PersonCard
-	    :name=people.name
-	    :photo_link=people.photo_link
-	    :description=people.description
-	    :link=people.link
-	  />
-	  <br>
-	  <br>
-	  <br>
-	</div>
+        <h1 class="title">{{ $t("team_page_header") }}</h1>
+        <p class="is-size-5">{{ $t("team_page_description") }}</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div v-for="people in team" :key="people.name">
+          <PersonCard
+            :name="people.name"
+            :photo_link="people.photo_link"
+            :description="people.description"
+            :link="people.link"
+          />
+          <br />
+          <br />
+          <br />
+        </div>
       </div>
     </section>
   </div>
@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       team
-    }
+    };
   }
-}
+};
 </script>

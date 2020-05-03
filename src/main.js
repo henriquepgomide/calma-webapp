@@ -6,10 +6,10 @@ import Buefy from "buefy";
 import vueHeadful from "vue-headful";
 import VueI18n from "vue-i18n";
 import i18n from "./i18n";
-
+import "./registerServiceWorker";
 
 Vue.use(Buefy, {
-  defaultIconPack: "fas",
+  defaultIconPack: "fas"
 });
 
 Vue.use(VueI18n);

@@ -1,21 +1,20 @@
 export default function getBrowserLocale(options = {}) {
-  const defaultOptions = { countryCodeOnly: false }
+  const defaultOptions = { countryCodeOnly: false };
 
-  const opt = { ...defaultOptions, ...options }
+  const opt = { ...defaultOptions, ...options };
 
   const navigatorLocale =
     navigator.languages !== undefined
       ? navigator.languages[0]
-      : navigator.language
+      : navigator.language;
 
   if (!navigatorLocale) {
-    return undefined
+    return undefined;
   }
 
   const trimmedLocale = opt.countryCodeOnly
     ? navigatorLocale.trim().split(/-|_/)[0]
-    : navigatorLocale.trim()
+    : navigatorLocale.trim();
 
-  return trimmedLocale
+  return trimmedLocale;
 }
-

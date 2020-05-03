@@ -19,14 +19,12 @@ const routes = [
   {
     path: "/services",
     name: "Services",
-    component: () =>
-    import("../views/Services.vue")
+    component: () => import("../views/Services.vue")
   },
   {
     path: "/libraries",
     name: "Libraries",
-    component: () =>
-    import("../views/Libraries.vue")
+    component: () => import("../views/Libraries.vue")
   }
 ];
 
