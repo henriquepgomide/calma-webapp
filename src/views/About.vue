@@ -30,7 +30,7 @@
       <div class="container">
 	<h2 class="subtitle is-size-1">Voluntários</h2>
 	<br>
-        <div v-for="people in team.slice(11,)" :key="people.name">
+        <div v-for="people in team.slice(10,)" :key="people.name">
 	  <PersonCard
 	    :name="people.name"
 	    :photo_link="people.photo_link"
