@@ -25,3 +25,8 @@ if __name__ == "__main__":
     output_path_2 = './../src/assets/data/libraries_list.json'
     data_2 = Data(url_2, output_path_2)
     data_2.store_gsheet_as_json()
+
+    url_3 = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSk3SnpwbkhIOIyC9Tt54ByVYtbm8lIdPCLqLTaYdFZTLfQnB_jNZWMZQY2KF8242NcTuVNFvjttJ2g/pub?gid=0&single=true&output=csv'
+    output_path_3 = './../src/assets/team/team.json'
+    data_3 = Data(url_3, output_path_3)
+    data_3.store_gsheet_as_json()
