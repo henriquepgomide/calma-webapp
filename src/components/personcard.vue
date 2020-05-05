@@ -3,7 +3,10 @@
     <div class="columns">
       <div class="column is-one-fifth">
         <figure class="image is-128x128">
-          <img class="is-rounded" :src="`${ publicPath }img/team/${ photo_link }`" />
+          <img
+            class="is-rounded"
+            :src="`${publicPath}img/team/${photo_link}`"
+          />
         </figure>
       </div>
       <div class="column">
@@ -22,10 +25,10 @@ export default {
     description: String,
     link: String
   },
-  data () {
+  data() {
     return {
       publicPath: process.env.BASE_URL
-    }
-  },
+    };
+  }
 };
 </script>

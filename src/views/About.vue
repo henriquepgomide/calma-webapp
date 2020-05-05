@@ -12,37 +12,36 @@
     </section>
     <section class="section">
       <div class="container">
-	<h2 class="subtitle is-size-1">Pesquisadores e Supervisores</h2>
-	<br>
-        <div v-for="people in team.slice(0,10)" :key="people.name">
-	  <PersonCard
-	    :name="people.name"
-	    :photo_link="people.photo_link"
-	    :description="people.description"
-	    :link="people.link"
-	    />
-	  <br />
+        <h2 class="subtitle is-size-1">Pesquisadores e Supervisores</h2>
+        <br />
+        <div v-for="people in team.slice(0, 10)" :key="people.name">
+          <PersonCard
+            :name="people.name"
+            :photo_link="people.photo_link"
+            :description="people.description"
+            :link="people.link"
+          />
+          <br />
           <br />
           <br />
         </div>
       </div>
 
       <div class="container">
-	<h2 class="subtitle is-size-1">Voluntários</h2>
-	<br>
-        <div v-for="people in team.slice(10,)" :key="people.name">
-	  <PersonCard
-	    :name="people.name"
-	    :photo_link="people.photo_link"
-	    :description="people.description"
-	    :link="people.link"
-	    />
-	  <br />
+        <h2 class="subtitle is-size-1">Voluntários</h2>
+        <br />
+        <div v-for="people in team.slice(10)" :key="people.name">
+          <PersonCard
+            :name="people.name"
+            :photo_link="people.photo_link"
+            :description="people.description"
+            :link="people.link"
+          />
+          <br />
           <br />
           <br />
         </div>
       </div>
-
     </section>
   </div>
 </template>
