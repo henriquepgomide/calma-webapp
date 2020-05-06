@@ -10,8 +10,11 @@
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           {{ $t("navbar_principal") }}
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/about' }">
+        <b-navbar-item tag="router-link" :to="{ path: '/team' }">
           {{ $t("navbar_equipe") }}
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/about' }">
+          {{ $t("navbar_about") }}
         </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/services' }">
           {{ $t("navbar_onde_buscar_ajuda") }}
