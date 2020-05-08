@@ -3,9 +3,9 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import Buefy from "buefy";
-import vueHeadful from "vue-headful";
 import VueI18n from "vue-i18n";
 import i18n from "./i18n";
+import Meta from "vue-meta";
 import "./registerServiceWorker";
 
 Vue.use(Buefy, {
@@ -14,7 +14,7 @@ Vue.use(Buefy, {
 
 Vue.use(VueI18n);
 Vue.config.productionTip = false;
-Vue.component("vue-headful", vueHeadful);
+Vue.use(Meta);
 
 new Vue({
   router,

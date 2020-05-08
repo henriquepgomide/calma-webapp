@@ -1,9 +1,5 @@
 <template>
   <div class="About">
-    <vue-headful
-      :title="$t('faq_page_title_seo')"
-      :description="$t('faq_page_description_seo')"
-    />
     <section class="section">
       <div class="container">
         <h1 class="title is-size-1">{{ $t("faq_page_title") }}</h1>
@@ -32,3 +28,22 @@
     </section>
   </div>
 </template>
+<script>
+import i18n from "@/i18n";
+export default {
+  metaInfo: {
+    title: i18n.t("faq_page_title_seo"),
+    description: i18n.t("faq_page_description_seo"),
+    meta: [
+      { name: "og:title", content: i18n.t("faq_page_title_seo") },
+      {
+        name: "og:image",
+        content: "https://www.calmanessahora.com.br/calma-nessa-hora.png"
+      },
+      { name: "og:url", content: "https://www.calmanessahora.com.br/about" },
+      { name: "description", content: i18n.t("faq_page_title_seo") },
+      { name: "og:description", content: i18n.t("faq_page_description_seo") }
+    ]
+  }
+};
+</script>

@@ -1,9 +1,5 @@
 <template>
   <div class="home">
-    <vue-headful
-      :title="$t('main_title_seo')"
-      :description="$t('main_description_seo')"
-    />
     <section class="section">
       <div class="container">
         <img width="220" src="../assets/friendly_face.svg" />
@@ -57,12 +53,25 @@
 
 <script>
 import Footer from "@/components/footer.vue";
+import i18n from "@/i18n";
 
 export default {
   name: "Home",
   components: {
     Footer
+  },
+  metaInfo: {
+    title: i18n.t("main_title_seo"),
+    description: i18n.t("main_description_seo"),
+    meta: [
+      { name: "og:title", content: i18n.t("main_title_seo") },
+      { name: "og:image", content: "https://www.calmanessahora.com.br/calma-nessa-hora.png"},
+      { name: "og:url", content: "https://www.calmanessahora.com.br/"},
+      { name: "description", content: i18n.t("main_description_seo") },
+      { name: "og:description", content: i18n.t("main_description_seo") }
+    ]
   }
+
 };
 </script>
 
